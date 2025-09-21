@@ -6,21 +6,21 @@ function Connect() {
           display: "flex",
           justifyContent: "center",
           textAlign: "center",
-          color: "white",
+          color: "rgb(255, 170, 76)",
           // backgroundColor: "rgb(48, 58, 75)",
           fontWeight: "bold",
           padding: "1rem",
           width: "100vw",
           marginBottom: "3rem",
           marginTop: "3rem",
-          textShadow: "1px 1px 10px rgba(255, 170, 76, .6)",
         }}
       >
         Connect
       </h2>
 
       <div id="contact" className="contact-container">
-        <img className = "anchor-img"
+        <img
+          className="anchor-img"
           style={{
             background: "rgb(255, 170, 76)",
             width: "2rem",
@@ -31,15 +31,19 @@ function Connect() {
           {" "}
           AaronSierp@gmail.com
         </a>
-        <img className = "anchor-img-phone"
+        <img
+          className="anchor-img-phone"
           style={{
             background: "rgb(255, 170, 76)",
             width: "2rem",
           }}
           src="/images/Phone.png"
         />
-        <p className="footer-anchors" >859.420.4144</p>
-        <img className = "anchor-img"
+        <p className="footer-anchors" style={{ color: "rgb(255, 170, 76)" }}>
+          859.420.4144
+        </p>
+        <img
+          className="anchor-img"
           style={{
             background: "rgb(255, 170, 76)",
             width: "2rem",
@@ -49,14 +53,16 @@ function Connect() {
         <a className="footer-anchors" href="https://github.com/AASierp">
           GitHub
         </a>
-        <img className = "anchor-img"
+        <img
+          className="anchor-img"
           style={{
             background: "rgb(255, 170, 76)",
             width: "2rem",
           }}
           src="/images/in.svg"
         />
-        <a className="footer-anchors"
+        <a
+          className="footer-anchors"
           href="https://www.linkedin.com/in/aaron-sierp"
         >
           LinkedIn

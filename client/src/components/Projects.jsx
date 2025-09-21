@@ -63,15 +63,13 @@ function Projects() {
           justifyContent: "center",
           textAlign: "center",
           color: "white",
-          // backgroundColor: "rgb(48, 58, 75)",
           fontWeight: "bold",
           padding: "1rem",
           width: "100vw",
           marginBottom: "3rem",
-          textShadow: "1px 1px 10px rgba(255, 170, 76, .6)",
         }}
       >
-        Featured Projects
+      Featured Projects
       </h2>
       <div className="project-container">
         {project.map((e) => (

@@ -1,31 +1,34 @@
-
-
 function Hero() {
-  
   return (
     <div className="two-column-hero">
-      <div className="hero-column name">
-        <h3 style={{ color: "rgb(255, 170, 76)" }}>Hi, my name is...</h3>
-        <h1 style={{ color: "white", fontWeight: "bold", lineHeight: "6rem" }}>
-          Aaron Sierp
-        </h1>
-      </div>
-      <div className="hero-column img-me-container">
+      <div className="hero-column1 img-me-container">
         <img
           className="me"
           alt="picture of Aaron Sierp"
           src="/images/linkedin_profile_picture.jpg"
         />
       </div>
-      <div className="hero-container hero-column">
-        <h3 style={{ color: "white" }}>im a...</h3>
+
+      <div className="hero-container hero-column2">
+        <div className="tag">
+          <h3 style={{ color: "rgb(255, 170, 76)" }}>Hi, my name is...</h3>
+          <h1
+            style={{ color: "white", fontWeight: "bold", lineHeight: "6rem", marginLeft: "4rem" }}
+          >
+            Aaron Sierp
+          </h1>
+        </div>
+        
         <p>
-          Full-stack developer passionate about building clean, functional web
-          applications. I specialize in C#, JavaScript, and React to create
-          solutions that balance usability with strong backend foundations.
-          Whether designing intuitive user interfaces or optimizing data flow
-          behind the scenes, my goal is to deliver reliable, scalable projects
-          that make a difference.
+          I'm a Software developer with hands-on experience in C#/.NET, SQL,
+          JavaScript, React, and Node.js. 10+ years in Electrical &
+          Instrumentation with proven skills in problem-solving,
+          troubleshooting, and project execution. Recent contract work includes
+          building web applications with document management features and
+          automation tools. I am primarily interested in creative problem
+          solving and continuous learning. Pursuing software development has
+          allowed me to satisfy my genuine curiosity for learning while building
+          solutions that solve real problems.
         </p>
       </div>
     </div>

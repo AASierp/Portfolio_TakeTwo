@@ -5,14 +5,12 @@ function Footer() {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="/assets/resume.pdf" target="_blank">
+        <a href="/assets/Resume_Tech0.pdf" target="_blank">
           Resume
         </a>
       </div>
       <div>
-        <p className = "tm">
-          © 2025 Aaron Sierp. All rights reserved.
-        </p>
+        <p className="tm">© 2025 Aaron Sierp. All rights reserved.</p>
       </div>
     </>
   );

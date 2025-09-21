@@ -31,12 +31,12 @@ function Header() {
             </a>
           </nav>
         </div>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Connect</a>
-          <a href="/assets/resume.pdf" target="_blank">
-            Resume
-          </a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Connect</a>
+        <a href="/assets/Resume_Tech0.pdf" target="_blank">
+          Resume
+        </a>
       </nav>
       <div className="title"></div>
     </div>

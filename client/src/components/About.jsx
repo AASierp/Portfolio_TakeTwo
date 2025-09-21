@@ -7,47 +7,62 @@ function About() {
           display: "flex",
           justifyContent: "center",
           textAlign: "center",
-          color: "white",
+          color: "rgb(255, 170, 76)",
           // backgroundColor: "rgb(48, 58, 75)",
           fontWeight: "bold",
-          fontFamily: "astro",
           padding: "1rem",
           width: "100vw",
           marginBottom: "3rem",
           marginTop: "3rem",
-          textShadow: "1px 1px 10px rgba(255, 170, 76, .6)",
         }}
       >
         About Me
       </h2>
       <div className="about-container">
         <p>
-          I’m a developer with a strong foundation in C#/.NET, JavaScript,
-          React, and SQL, driven by a passion for solving problems and building
-          clean, functional applications. My journey into tech started after 15
-          years in the industrial world, where I worked in electrical
-          maintenance and controls. That background taught me how to
-          troubleshoot, think systematically, and stay calm under pressure —
-          skills I now apply to software development.
+          I spent fifteen years working in electrical maintenance and controls,
+          and I found it largely unstimulating on a daily basis. However, about
+          ten percent of the time, I would get to address a problem that was not
+          routine and that I had not seen dozens of times before. That ten
+          percent was the most rewarding, interesting, and stimulating part of
+          the job because I learned something new. It was the desire to have
+          that experience more often that led me to investigate other career
+          options. I had always found programming fascinating and thought the
+          barrier to entry was too guarded for me to achieve, until I met
+          several other people that had successfully transitioned into the space
+          with non-traditional backgrounds. This motivated me to take a chance
+          on a programming bootcamp, where I found exactly what I was looking
+          for.
         </p>
         <p>
-          I’ve completed both a frontend and backend bootcamp through CODE:YOU,
-          gaining hands-on experience with modern frameworks, databases, and
-          deployment practices. My recent projects include building a full-stack
-          bug tracker, a timekeeping filter tool for Excel, and an AI-powered
-          book recommendation app concept.
+          I know this is the part where I am supposed to say I am “committed to
+          building secure, scalable software” (why would anyone not build
+          secure, scalable software?) and that I am a “dynamic and
+          results-driven developer,” along with a laundry list of other tech
+          resume clichés and platitudes. However, after reading these lines time
+          and time again on the various LinkedIn profiles of other developers, I
+          can’t help but feel that in many cases these sentiments are just AI
+          crafted, disingenuous, buzzword nonsense.
         </p>
         <p>
-          I’m constantly learning, refining my skills, and exploring new
-          technologies — whether it’s cloud platforms like AWS, advanced React
-          features, or data-driven problem-solving. Above all, I enjoy creating
-          tools that are both practical and intuitive, with an eye toward
-          long-term scalability and maintainability.
+          For me, the reality is that I just genuinely love creative
+          problem-solving and learning. If someone would pay me a living wage to
+          attend university full time, that is what I would be doing. But in
+          lieu of that, I think software development is a strong second. There
+          is no shortage of problems to be solved, and you couldn’t hope to
+          learn everything there is to know about it in a lifetime.
         </p>
         <p>
-          When I’m not coding, I’m usually reading (Stephen King and Robert
-          McCammon are favorites), collecting vintage military rations, or
-          brainstorming my next project idea.
+          Yes, I know that software development (particularly for juniors) isn’t
+          a never-ending problem-solving bonanza and that it can be monotonous,
+          tedious, and frustrating at times. But I have found that nine times
+          out of ten, it is disproportionately rewarding. There are few better
+          feelings than finally grasping a difficult concept and having that
+          epiphany moment. After sometimes hours of struggle (and maybe a coffee
+          break), realizing how to solve a problem or fix a bug, or finally
+          putting the finishing touches on a project and getting to step back
+          and look at your creation. These are the things that make the
+          day-to-day grind worth the effort.
         </p>
       </div>
     </>

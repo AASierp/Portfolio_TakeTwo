@@ -1,24 +1,4 @@
 @import "reset.css";
-@font-face {
-  font-family: "astro";
-  src: url("/fonts/SpaceGrotesk-Light.woff"),
-    url("/fonts/SpaceGrotesk-Light.woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "astro2";
-  src: url("/fonts/Astro-eZ2Bg.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-* {
-  font-family: "astro";
-}
 
 button {
   font-family: inherit; /* now buttons will follow astro from body */
@@ -27,17 +7,18 @@ button {
 html,
 body {
   scroll-behavior: smooth;
-  font-family: "astro", sans-serif !important;
-  /* color: rgb(240, 190, 80); */
-  /* background-color: rgb(48, 58, 67); */
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/fancy-cushion.webp");
-  background-size: cover; /* cover entire screen */
-  background-repeat: repeat; /* pattern repeats under gradient */
-  background-position: center;
-  background-size: 300px 400px;
-  color: rgb(255, 170, 76);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
   overflow-x: hidden;
+  background: linear-gradient(
+    to right,
+    rgb(48, 58, 67) 0%,
+    rgb(48, 58, 67) 13%,
+    rgb(255, 170, 76) 13%,
+    rgb(255, 170, 76) 13.03%,
+    #333 13.03%,
+    #111 100%
+  ) !important;
 }
 
 h1 {
@@ -72,7 +53,6 @@ a {
   margin-right: 20px;
   color: rgb(255, 170, 76);
   font-size: 1.5rem;
-  font-family: "astro";
   text-decoration: none;
   transition: color 0.3s ease, background 0.3s ease;
 }
@@ -101,27 +81,32 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 3rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  /* border-radius: 20px; */
-  box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.6);
-  /* border: 2px solid rgb(255, 170, 76); */
+  margin-right: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
 }
 
-
-.hero-column {
+/* .hero-column {
   flex: 1 1 0;
   min-width: 0;
+} */
+
+.hero-column1 {
+  flex: 0 0 25%;
+}
+
+.hero-column2 {
+  flex: 0 0 75%;
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  border-radius: 10px;
-  /* box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 0.3); */
-  /* background-color: rgba(33, 33, 33, .9); */
+  /* justify-content: left;
+  align-items: center; */
+  text-align: left;
+  line-height: 1.5;
   padding: 1.5rem;
   margin-top: 8rem;
   margin-bottom: 5rem;
@@ -135,28 +120,47 @@ a:hover {
   flex-direction: column;
 }
 
+.tag {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
 .img-me-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -10rem;
 }
 
 .me {
-  width: 25rem;
-  box-shadow: 0px 0px  20px 20px rgba(255, 170, 76, 0.1);
+  width: 20rem;
+  z-index: 10;
+}
+
+.line {
+  height: 1px;
+  background-color: rgb(255, 170, 76);
+  width: 100vw;
+  position: absolute;
+  top: 40%;
 }
 
 .project-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .project-card {
   display: flex;
   flex: 1 1 0;
-  max-width: 20rem;
+  max-width: 25rem;
   margin: 2rem;
   justify-content: center;
   align-items: center;
@@ -164,20 +168,18 @@ a:hover {
   font-size: 1rem;
   /* border-radius: 15px; */
   box-shadow: 0px 0px 7px 2px aliceblue;
-  padding: 1rem;
-  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.6);
-  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease;
   /* border: 2px solid rgb(255, 170, 76); */
 }
 
 .project-card:hover {
   transform: scale(1.3);
-  background-color: #fdf0d5;
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 0px 1000px 1000px rgba(0, 0, 0, 0.6);
   color: rgba(48, 58, 67);
   font-size: 1rem;
-  border: 2px solid rgba(48, 58, 67);
 }
 
 .project-card:hover h3 {
@@ -185,14 +187,14 @@ a:hover {
 }
 
 .project-card:hover .card-image {
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .project-card:hover button {
   transform: scale(1.5);
   background-color: rgb(48, 58, 75);
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.6);
-  color: #fdf0d5;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  color: white;
   font-size: 1rem;
   border: 2px solid black;
 }
@@ -204,13 +206,13 @@ a:hover {
   justify-content: center;
   align-items: center;
   /* border-radius: 20px; */
-  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.6);
-  background-color: rgba(255, 255, 255, 0.3);
+  /* box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.1); */
+
   /* border: 2px solid rgb(255, 170, 76); */
   padding: 1.5rem;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   margin-bottom: 40px;
-  width: 98rem;
+  max-width: 88rem;
   font-size: 1.5rem;
 }
 
@@ -221,22 +223,22 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   /* border-radius: 20px; */
-  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.6);
-  background-color: rgba(255, 255, 255, 0.3);
+  /* box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.2); */
+  /* background-color: rgba(255, 255, 255, 0.1); */
   /* border: 2px solid rgb(255, 170, 76); */
   padding: 1.5rem;
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 98rem;
+  width: 84rem;
   font-size: 1.5rem;
 }
 
 .anchor-img {
-  margin-right: -10rem;
+  margin-right: -8rem;
 }
 
 .anchor-img-phone {
-  margin-right: -9.5rem;
+  margin-right: -7rem;
 }
 
 .footer-container {
@@ -304,7 +306,7 @@ a:hover {
   width: 18rem;
   height: 12rem;
   margin-bottom: 1rem;
-  box-shadow: 0 0 8px 2px rgba(255, 170, 76, 0.6);
+  box-shadow: 0 0 8px 2px white;
 }
 
 /* .card-image:hover {
@@ -338,11 +340,11 @@ a:hover {
   transform: translateY(-50%) translateX(var(--slide)) scale(0.98);
   opacity: 0;
   pointer-events: none;
-  background: rgba(30, 30, 30, 0.3);
+  background: rgba(30, 30, 30, 1);
   border: 1px solid white;
   border-radius: 10px;
   padding: 8px 10px;
-  box-shadow: 0 0 8px 2px rgba(255, 170, 76);
+  box-shadow: 0 0 8px 2px white;
   display: flex;
   gap: 8px;
   z-index: 20;
