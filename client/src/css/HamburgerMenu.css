@@ -1,0 +1,54 @@
+/* Default: hidden on desktop */
+.hamburger-nav {
+  display: none;
+}
+
+/* Mobile view only */
+@media (max-width: 768px) {
+  .hamburger-nav {
+    display: block;
+    position: relative;
+    left: 150%;
+    z-index: 20;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    width: 30px;
+    margin: 1rem;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  .nav-links {
+    list-style: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(033,033,033, 0.5);
+    flex-direction: column;
+    width: 125px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0;
+  }
+
+  .nav-links.open {
+    max-height: 300px;
+  }
+
+  .nav-links li {
+    padding: 1rem;
+    text-align: center;
+  }
+}

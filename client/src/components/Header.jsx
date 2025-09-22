@@ -1,7 +1,9 @@
+import HamburgerMenu from "./HamburgerMenu";
+
 function Header() {
   return (
     <div id="home" className="header-container">
-      <nav>
+      <nav className="desktop-nav">
         <div className="mono-wrap">
           <a href="/" className="monogram" aria-label="Home">
             <img className="mono" src="/images/mono.jpg" alt="" />
@@ -39,6 +41,7 @@ function Header() {
         </a>
       </nav>
       <div className="title"></div>
+      <HamburgerMenu />
     </div>
   );
 }

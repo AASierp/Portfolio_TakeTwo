@@ -11,14 +11,18 @@ function Hero() {
 
       <div className="hero-container hero-column2">
         <div className="tag">
-          <h3 style={{ color: "rgb(255, 170, 76)" }}>Hi, my name is...</h3>
+          <h3 style={{ color: "white" }}>Hi, my name is...</h3>
           <h1
-            style={{ color: "white", fontWeight: "bold", lineHeight: "6rem", marginLeft: "4rem" }}
+            style={{
+              color: "rgb(255, 170, 76)",
+              fontWeight: "bold",
+              lineHeight: "6rem",
+              marginLeft: "4rem",
+            }}
           >
             Aaron Sierp
           </h1>
         </div>
-        
         <p>
           I'm a Software developer with hands-on experience in C#/.NET, SQL,
           JavaScript, React, and Node.js. 10+ years in Electrical &

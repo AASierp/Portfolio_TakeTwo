@@ -10,6 +10,7 @@ function Index() {
   return (
     <div className="main-container">
       <Header />
+      <div className="line"></div>
       <Hero />
       <Projects />
       <About />

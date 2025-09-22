@@ -12,11 +12,11 @@ function About() {
           fontWeight: "bold",
           padding: "1rem",
           width: "100vw",
-          marginBottom: "3rem",
+          // marginBottom: "1rem",
           marginTop: "3rem",
         }}
       >
-        About Me
+        A Word About Me...
       </h2>
       <div className="about-container">
         <p>

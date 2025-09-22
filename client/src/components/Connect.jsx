@@ -15,7 +15,7 @@ function Connect() {
           marginTop: "3rem",
         }}
       >
-        Connect
+        Let's Connect...
       </h2>
 
       <div id="contact" className="contact-container">

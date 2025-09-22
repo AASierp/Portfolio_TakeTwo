@@ -62,14 +62,14 @@ function Projects() {
           display: "flex",
           justifyContent: "center",
           textAlign: "center",
-          color: "white",
+          color: "rgb(255, 170,76)",
           fontWeight: "bold",
           padding: "1rem",
           width: "100vw",
           marginBottom: "3rem",
         }}
       >
-      Featured Projects
+      Notable Projects...
       </h2>
       <div className="project-container">
         {project.map((e) => (

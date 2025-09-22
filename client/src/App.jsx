@@ -1,11 +1,8 @@
-
-import Index from './pages';
-import './css/styles.css';
+import Index from "./pages";
+import "./css/styles.css";
 
 function App() {
-  return(
-  <Index />
-  )
+  return <Index />;
 }
 
-export default App
+export default App;
