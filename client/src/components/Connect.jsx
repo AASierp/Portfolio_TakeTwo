@@ -22,10 +22,9 @@ function Connect() {
         <img
           className="anchor-img"
           style={{
-            background: "rgb(255, 170, 76)",
             width: "2rem",
           }}
-          src="/images/tl.webp"
+          src="/images/email1.png"
         />
         <a className="footer-anchors" href="mailto:AaronSierp@gmail.com">
           {" "}
@@ -34,7 +33,6 @@ function Connect() {
         <img
           className="anchor-img-phone"
           style={{
-            background: "rgb(255, 170, 76)",
             width: "2rem",
           }}
           src="/images/Phone.png"
@@ -45,7 +43,6 @@ function Connect() {
         <img
           className="anchor-img"
           style={{
-            background: "rgb(255, 170, 76)",
             width: "2rem",
           }}
           src="/images/github.png"
@@ -56,10 +53,9 @@ function Connect() {
         <img
           className="anchor-img"
           style={{
-            background: "rgb(255, 170, 76)",
             width: "2rem",
           }}
-          src="/images/in.svg"
+          src="/images/link.png"
         />
         <a
           className="footer-anchors"

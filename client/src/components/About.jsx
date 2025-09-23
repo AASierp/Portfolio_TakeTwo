@@ -20,19 +20,19 @@ function About() {
       </h2>
       <div className="about-container">
         <p>
-          I spent fifteen years working in electrical maintenance and controls,
-          and I found it largely unstimulating on a daily basis. However, about
-          ten percent of the time, I would get to address a problem that was not
-          routine and that I had not seen dozens of times before. That ten
-          percent was the most rewarding, interesting, and stimulating part of
-          the job because I learned something new. It was the desire to have
-          that experience more often that led me to investigate other career
-          options. I had always found programming fascinating and thought the
-          barrier to entry was too guarded for me to achieve, until I met
-          several other people that had successfully transitioned into the space
-          with non-traditional backgrounds. This motivated me to take a chance
-          on a programming bootcamp, where I found exactly what I was looking
-          for.
+          I spent fifteen years working in electrical maintenance and controls.
+          Over time, it grew repetitive and lost the appeal it once held.
+          I found myself only truly engaged on the rare occasions when I would
+          be presented with a problem that was not routine and that I had not
+          seen dozens of times before. That fraction of the time was the most
+          rewarding, interesting, and stimulating part of the job because I
+          learned something new. It was the desire to have that experience more
+          often that led me to investigate other career options. I had always
+          found programming fascinating and thought the barrier to entry was too
+          guarded for me to overcome. Until I met several other people that had
+          successfully transitioned into the space with non-traditional
+          backgrounds. This motivated me to take a chance on a programming
+          bootcamp, where I found exactly what I was looking for.
         </p>
         <p>
           I know this is the part where I am supposed to say I am “committed to
@@ -49,8 +49,8 @@ function About() {
           problem-solving and learning. If someone would pay me a living wage to
           attend university full time, that is what I would be doing. But in
           lieu of that, I think software development is a strong second. There
-          is no shortage of problems to be solved, and you couldn’t hope to
-          learn everything there is to know about it in a lifetime.
+          is no shortage of problems to be solved and you couldn’t hope to learn
+          everything there is to know about it in a lifetime.
         </p>
         <p>
           Yes, I know that software development (particularly for juniors) isn’t
@@ -60,9 +60,9 @@ function About() {
           feelings than finally grasping a difficult concept and having that
           epiphany moment. After sometimes hours of struggle (and maybe a coffee
           break), realizing how to solve a problem or fix a bug, or finally
-          putting the finishing touches on a project and getting to step back
-          and look at your creation. These are the things that make the
-          day-to-day grind worth the effort.
+          putting the finishing touches on a project and stepping back to look
+          at your creation. These are the things that make the day-to-day grind
+          worth the effort.
         </p>
       </div>
     </>

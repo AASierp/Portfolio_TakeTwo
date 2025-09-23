@@ -24,10 +24,10 @@ function Projects() {
 
         const data = await response.json();
         const projList = new Set([
-          "Adventure_Game_Repo",
+          "TimeSheetFilter",
           "TaskForge",
           "RealEstateScrapeMVC",
-          "TimeSheetFilter",
+          "Adventure_Game_Repo",
         ]);
         const filteredData = data.filter((e) => projList.has(e.name));
 
@@ -69,7 +69,7 @@ function Projects() {
           marginBottom: "3rem",
         }}
       >
-      Notable Projects...
+        Notable Projects...
       </h2>
       <div className="project-container">
         {project.map((e) => (
