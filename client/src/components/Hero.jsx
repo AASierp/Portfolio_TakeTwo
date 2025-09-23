@@ -23,7 +23,7 @@ function Hero() {
             Aaron Sierp
           </h1>
         </div>
-        <p>
+        <p className="hero-paragraph">
           I'm a Software developer with hands-on experience in C#/.NET, SQL,
           JavaScript, React, and Node.js. 10+ years in Electrical &
           Instrumentation with proven skills in problem-solving,

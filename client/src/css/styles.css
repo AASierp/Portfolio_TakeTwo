@@ -412,7 +412,20 @@ path {
 }
 
 @media (max-width: 768px) {
-  /* General text scaling */
+  html,
+  body {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    background: linear-gradient(
+      to right,
+      #111 0%,
+      #333 50%,
+      #333 50%,
+      #111 100%
+    ) !important;
+  }
   h1 {
     font-size: 2.2rem;
   }
@@ -457,7 +470,7 @@ path {
 
   .hero-container {
     margin: 2rem 0;
-    margin-top: 4rem;
+    margin-top: 2rem;
     font-size: 1.2rem;
     padding: 1rem;
   }
@@ -471,16 +484,17 @@ path {
   .project-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .project-card {
-    max-width: 90%;
+    max-width: 80%;
     margin: 1rem 0;
     transform: none !important; /* disable extreme hover zoom on mobile */
   }
 
   .card-image {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 
@@ -495,6 +509,18 @@ path {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .contact-container {
+    gap: 0.5rem;
+  }
+
+  .about-container {
+    text-align: left;
+  }
+
+  .hero-paragraph {
+    margin-top: -2rem;
   }
 
   /* Footer */
