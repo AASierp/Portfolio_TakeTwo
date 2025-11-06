@@ -17,7 +17,7 @@ function ProjectCard({ project }) {
       <a href={url} target="_blank" rel="noopener noreferrer">
         <button className="proj-link-btn">View On GitHub</button>
       </a>
-      <TechIcons projectName = {name}/>
+      <TechIcons projectName={name} />
     </div>
   );
 }

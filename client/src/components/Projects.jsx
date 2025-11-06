@@ -23,15 +23,21 @@ function Projects() {
         }
 
         const data = await response.json();
-        const projList = new Set([
-          "TimeSheetFilter",
+        const projList = [
           "TaskForge",
           "RealEstateScrapeMVC",
+          "TimeSheetFilter",
+          "InventoryManager",
           "Adventure_Game_Repo",
-        ]);
-        const filteredData = data.filter((e) => projList.has(e.name));
+          "Portfolio_TakeTwo",
+        ];
+        const filteredData = data.filter((e) => projList.includes(e.name));
 
-        const mappedData = filteredData.map((e) => ({
+        const sortedData = filteredData.sort(
+          (a, b) => projList.indexOf(a.name) - projList.indexOf(b.name)
+        );
+
+        const mappedData = sortedData.map((e) => ({
           name: e.name,
           description: e.description,
           url: e.html_url,

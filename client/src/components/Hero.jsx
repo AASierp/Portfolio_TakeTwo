@@ -1,11 +1,17 @@
+import { useState } from "react";
+
 function Hero() {
+  const [img, setImg] = useState("/images/linkedin_profile_picture.jpg");
+
   return (
     <div className="two-column-hero">
       <div className="hero-column1 img-me-container">
         <img
           className="me"
+          onMouseEnter={() => setImg("/images/pic1.jpeg")}
+          onMouseLeave={() => setImg("/images/linkedin_profile_picture.jpg")}
           alt="picture of Aaron Sierp"
-          src="/images/linkedin_profile_picture.jpg"
+          src={img}
         />
       </div>
 
