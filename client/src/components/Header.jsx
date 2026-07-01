@@ -11,23 +11,17 @@ function Header() {
 
           <nav className="mono-pop" aria-label="Social">
             <a href="https://github.com/aasierp" className="pop-item">
-              <img
-                style={{width: "2rem" }}
-                src="/images/github.png"
-              />
+              <img style={{ width: "2rem" }} src="/images/github.png" />
             </a>
             <a
               href="https://www.linkedin.com/in/aaron-sierp"
               className="pop-item"
             >
-              <img
-                style={{ width: "2rem" }}
-                src="/images/link.png"
-              />
+              <img style={{ width: "2rem" }} src="/images/link.png" />
             </a>
             <a href="mailto:aaronsierp@gmail.com" className="pop-item">
               <img
-                style={{background: "transparent" , width: "2rem" }}
+                style={{ background: "transparent", width: "2rem" }}
                 src="/images/email1.png"
               />
             </a>

@@ -9,6 +9,7 @@ import Connect from "../components/Connect";
 function Index() {
   return (
     <div className="main-container">
+      <div className="top-light"></div>
       <Header />
       <div className="line"></div>
       <Hero />
