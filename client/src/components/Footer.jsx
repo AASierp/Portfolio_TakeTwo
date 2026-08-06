@@ -5,7 +5,7 @@ function Footer() {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="/assets/Resume_Tech0.pdf" target="_blank">
+        <a href="/assets/Aaron_Sierp_Resume.pdf" target="_blank">
           Resume
         </a>
       </div>
